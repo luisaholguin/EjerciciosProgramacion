@@ -54,6 +54,6 @@ public class Ejercicio2 {
         if (v==1)  
             bandera=1;                        
         }       
-        JOptionPane.showMessageDialog(null," Fin del ejercicio 2"); 
+        JOptionPane.showMessageDialog(null," Fin del ejercicio 2"); //fin del ejercicio
     }    
 }
