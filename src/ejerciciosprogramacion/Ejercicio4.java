@@ -52,8 +52,6 @@ public static void main(String[] args) {
         if (v==1)  
             bandera=1;                        
         }       
-        JOptionPane.showMessageDialog(null," Fin del ejercicio 4 "); 
-          
-    }
-    
+        JOptionPane.showMessageDialog(null," Fin del ejercicio 4 ");          
+    }   
 }
