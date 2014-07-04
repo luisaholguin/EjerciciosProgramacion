@@ -12,24 +12,31 @@ package ejerciciosprogramacion;
  */
 public class Ejercicio13 {
         
-    public int[] Ordenar(int[] valores){
-    int respaldo[] = new int[valores.length];
-    int cont = 0;
-        for (int i = 0; i < valores.length; i++) {
-            if (valores[i] < 0) {
-                respaldo[cont] = valores[i];
-                cont++;
-                }
+public static void main(String[] args) {
+    int n=0; int menor=0; int posicion =0;
+        n=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor del entero n"));
+        int[] arreglo1=new int[n];
+        int[] arregloauxiliar=new int[n];
+        for (int i = 0; i < n; i++) {
+            arreglo1 [i] = Integer.parseInt(JOptionPane.showInputDialog("Ingrese valores al vector"));
         }
-        for (int i = 0; i < valores.length; i++) {
-            if (valores[i] >= 0) {
-                respaldo[cont] = valores[i];
-                cont++;
-                }        
+         
+         for (int i = 0; i < n; i++) {
+             if (arreglo1[i] < 0) {
+                arregloauxiliar[posicion]= arreglo1[i];
+                posicion++;
+             }
+         }
+         for (int i = 0; i < n; i++) {
+            if (arreglo1[i] >= 0) {
+                arregloauxiliar[posicion]= arreglo1[i];
+                posicion++;
+             }
+        }
+         for (int i :arregloauxiliar) {
+        System.out.printf("%d ",i);
     }
-    return respaldo;     
-   }
 }
-
-    
+}
+ 
 
